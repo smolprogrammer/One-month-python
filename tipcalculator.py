@@ -1,9 +1,12 @@
 bill = float(input("Enter your bill, please: ").replace("$", ""))
-twenty = bill / 100 * 20
-fifty = bill / 100 * 50
-eighty = bill / 100 * 80
+# float(input("Enter your bill, please: ").strip("$"))
+small = bill / 100 * 15
+medium = bill / 100 * 18
+big = bill / 100 * 20
 print(f"""Here is your bill: {bill:.2f}$
+-------------------------------------
 And here is your options for the tips: 
-20% - {twenty:.2f}$
-50% - {fifty:.2f}$
-80% - {eighty:.2f}$""")
+-------------------------------------
+15% - {small:.2f}$
+18% - {medium:.2f}$
+20% - {big:.2f}$""")
